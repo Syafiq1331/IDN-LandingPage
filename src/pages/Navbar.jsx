@@ -3,7 +3,7 @@ import React from 'react'
 function Navbar() {
     return (
         <>
-            <h2>Hallo Saya Dari Navbar</h2>
+            <h2 className="text-2xl">Hallo Saya Dari Navbar</h2>
         </>
     );
 }
