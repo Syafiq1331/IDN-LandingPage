@@ -1,11 +1,8 @@
 import React from 'react'
 
-function Navbar() {
+const Navbar = () => {
     return (
-        <>
-            <h2 className="text-2xl">Hallo Saya Dari Navbar</h2>
-        </>
-    );
+        <h1>Hello Saya Navbar</h1>
+    )
 }
-
 export default Navbar;
