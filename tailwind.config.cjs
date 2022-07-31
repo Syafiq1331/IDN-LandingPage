@@ -1,5 +1,3 @@
-const plugin = require("tailwindcss/plugin");
-
 module.exports = {
 
   content: [
@@ -8,26 +6,13 @@ module.exports = {
 
   theme: {
     extend: {
-      backgroundImage: {
-        'idn-background' : "url('/src/img/bg1.jpeg')",
-      }
     },
     fontFamily: {
-      'montserrat': []
+      'montserrat' : ['Montserrat', 'sans-serif'],
+      'oxygen' : ['Oxygen', 'sans-serif'],
+      'roboto' : ['Roboto', 'sans-serif']
     },
   },
 
-  plugins: [
-
-    require("daisyui"),
-
-    plugin(function({ addComponents }) {
-      addComponents({
-        '.btn-hoverBlue': {
-          backgroundColor: '#0284c7',
-        },
-      })
-    })
-
-  ],
+  plugins: [require("daisyui"),],
 }
